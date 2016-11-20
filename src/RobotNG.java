@@ -13,7 +13,7 @@ public class RobotNG extends Robot {
         Turbo = turbo;
     }
 
-    public RobotNG(String nom, int x, int y, String position) {
+    public RobotNG(String nom, int x, int y, String position , boolean Turbo) {
         super(nom, x, y, position);
         Turbo = false;
     }
@@ -95,8 +95,6 @@ public class RobotNG extends Robot {
 public void ModeTurb (){
     if (Turbo=false)
         Turbo=true;
-    else
-        Turbo=false;
 }
 
 

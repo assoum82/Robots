@@ -8,12 +8,17 @@ public class main {
 
         Robot robot1 = new Robot("ibtissem",0,1,"nord");
         Robot robot2= new Robot("ibtissem", 1,1, "Sud");
-        RobotNG robot3 = new RobotNG("ibtisem",1,0,"est");
+        RobotNG robot3=(RobotNG)new RobotNG("ibtissem",1,0,"est",true);
+        RobotNG robot4=(RobotNG)new RobotNG("ibtissem",-1,0,"ouest",false);
+
+
+
 
 
         liste.add(robot1);
         liste.add(robot2);
         liste.add(robot3);
+        liste.add(robot4);
 
 
 
@@ -27,6 +32,12 @@ public class main {
         robot3.Gauche2();
         robot3.DemiTour2();
         robot3.Affiche();
+
+
+        robot4.Avance(2);
+        robot4.Gauche2();
+        robot4.DemiTour2();
+        robot4.Affiche();
 
 
 
